@@ -5,3 +5,73 @@ the internet connects computers
 
 The World Wide Web consortium
   reccomends internet standards
+CLient side
+  HTML
+  CSS
+  Javascript
+ Server side
+  php
+  sql
+  
+<!DOCTYPE html>
+<html lang="en> <!-- html tag with language attribute -->
+  <head>
+    <meta charset="utf-8"/>
+    <title>First HTMMLExample</title> <!-- Used for serch engines -->
+  </head>
+  <body>
+    <h1 id="intro">Introduction Heading</h1> 
+  </body>
+</html>
+
+<hr/> = horizontal rule (line)
+
+Attributes modify the tags
+
+Void Element
+  (non closing tags)
+    <br>
+  XML complient
+    <br />
+    
+Elements
+  inline
+    <em />
+  Block level
+    <h1 />
+    
+DONT USE <i> and <b> They are depreciated
+  use <em> and <strong>
+  
+Use entity number for non alphanumeric characters
+  use & prefix and eitehr number of text entity code
+  terminated with semicolon ;
+  
+definition list
+  <dl>
+    <dt>
+      Definition term
+    </dt>
+    <dd>
+      Definiton description
+    </dd>
+  </dl>
+  
+Table
+  <table>
+    <tr>
+      <th>Table header</th>
+    </tr>
+    <tr>
+      <td>
+        Table data
+      </td>
+    </tr>
+  </table>
+  
+  Table head
+  Tabe body
+  tabel foot
+    Sections for table to keep things organised
+  Row and columns can spand multiple columns or rows
+    use an attribute in the tag
