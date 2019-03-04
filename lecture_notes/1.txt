@@ -1,0 +1,7 @@
+lecturer = Grace Tao xtao@swin.edu.au
+
+the web connects people
+the internet connects computers
+
+The World Wide Web consortium
+  reccomends internet standards
