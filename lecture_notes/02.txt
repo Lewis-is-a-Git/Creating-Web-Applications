@@ -53,7 +53,11 @@ Forms
     <input type="" name="" id=""/>
   </form>
   get is used to retrive information
-  post is used to store information
+  post is used to store informations
+  Text input
+    text input can have default value=""
+    size="" is the visible size of the box        <-- test?!?!
+    maxlength="" is the maximum input possible    <-- test?!?!
   action is where the information is being sent
   name and value pair will be sent to the server
   use an array for checkbox input names[]
@@ -61,4 +65,56 @@ Forms
   must have submit or reset buttion
     <input type="submit" value="submit survey"/>
     <input type="reset" value"Reset"/>
+  
+  Radio
+    input is in the lable
+    <lable><input type="radio" name="rating" value="nm" />Name</lable>
+    
+  Drop down list
+    <select name="" id="" size="">
+      <option></option>
+    </select>
+    
+  Text areas
+    <p><label>Comments<br />
+      <textarea name="comments"
+                rows="4" cols="20">
+        Enter comments here.
+      </textarea>
+    </label></p>
+    
+HTML 5 form inputs
+  Colour
+  Date
+  Time
+  Search
+  URL
+  Datalist
+    choose input options from the attached data list
+     data list can also enter own value
+      reccomended values
+      
+Validation
+  
+Regular expressions
+  patter=""
+  ^[a-zA-Z]+$ only alphabet characters
+  
+  ^ start of string
+  $ end of the string
+  . any character
+  (a|b) a or b
+  [abc] only charaters from this set
+  \d single digit or [0-9]
+  a? 0 or 1 letter a symbol
+  [a-z] lowercase
+  {3,6} curly brackets designate length (3 to 6)
+  /i case insensitive
+  
+Structure
+  Div and Span
+    enclosue
+    does not have a specific meaning
+  HTML5 simantic elements
+    Navigation, Article, Section, Header, Footer, Main
   
