@@ -21,11 +21,44 @@ Figure
   
 Anchor
   Hyperlink
-  <a href="webaddress.com">Link Lable</a>
+  <a href="webaddress.com" title="" target="">Link Lable</a>
   can also use file names .html
+  target
+    open in new page or new tab
+  title
+    descrition popup on hover mouse
+  images can be hyperlinks
+    <a href="">
+      <img = src=""/>
+    </a>
+    thumbnails can be used as links to the larger image
   
 Resource Locations
   absolute path = "https://www.swinburne.com.au"
   relative path = "index.html"
     relative to the file currenty editing
+  
+Audio
+  <audio controls>
+    <source src="" type="audio/(extension)">
+    Your browser does not support audio
+  </audio controls>
+  
+  same for videos
+ 
+Forms
+  <form id="survey" method="post" or "get" action="process.php">
+    <!-- form elements -->
+    <lable for="">Name</lable>
+    <input type="" name="" id=""/>
+  </form>
+  get is used to retrive information
+  post is used to store information
+  action is where the information is being sent
+  name and value pair will be sent to the server
+  use an array for checkbox input names[]
+  
+  must have submit or reset buttion
+    <input type="submit" value="submit survey"/>
+    <input type="reset" value"Reset"/>
   
