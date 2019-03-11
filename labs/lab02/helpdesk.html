@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Demonstrates some basic HTML form elements"
+			/>
+		<meta name="keywords" content="HTML, Form, tags" />
+		<meta name="author" content="Lewis 101533222" />
+		<title>CWA Help Desk Appointment</title>
+	</head>
+	<body>
+		<a href="https://www.swinburne.edu.au/">
+			<img src="logo.png" alt="Swinburne Logo">
+		</a>
+		<h1>CWA Help Desk Appointment</h1>
+		<p>
+			The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday.
+			<br>
+			Check Blackboard for when CWA tutors will be there.
+		</p>
+		<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+			<fieldset>
+				<legend>Student Details</legend>
+				<p>
+					<label for="studentid">Student ID</label>
+					<input type="text" name="studentid" id="studentid" maxlength="10" size="10"
+						   pattern="\d{7,10}" required="required" />
+				</p>
+				<p>
+					<label for="givenname">Given Name</label>
+					<input type="text" name="name[]" id="givenname" maxlength="15" 
+						   size="20" pattern="[a-z]{1,15}">
+					<label for="familyname">Family Name</label>
+					<input type="text" name="name[]" id="familyname" maxlength="15" 
+						   size="20" pattern="[a-z]{1,15}">
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Your Unit</legend>
+				<p>
+					<input type="radio" id="COS10011" name="unit" value="COS10011" required="required">
+					<label for="COS10011">COS10011</label>
+					<input type="radio" id="COS60004" name="unit" value="COS60004">
+					<label for="COS60004">COS60004</label>
+					<input type="radio" id="COS60007" name="unit" value="COS60007">
+					<label for="COS60007">COS60007</label>
+				</p>
+				<p>
+					<label for="tutor">Your Tutor</label>
+					<select name="tutor" id="tutor" required="required">
+						<option hidden value="">Select a Tutor</option>
+						<option value="Harry">Harry</option>
+						<option value="Molly">Molly</option>
+						<option value="Maxwell">Maxwell</option>
+					</select>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Issue</legend>
+				<p>
+					<label for="html">HTML</label>
+					<input type="checkbox" id="html" name="language[]" value="html"
+						checked="checked" />
+
+					<label for="css">CSS</label>
+					<input type="checkbox" id="css" name="language[]" value="css" />
+
+					<label for="javascript">JavaScript</label>
+					<input type="checkbox" id="javascript" name="language[]" value="javascript"
+						/>
+
+					<label for="php">PHP</label>
+					<input type="checkbox" id="php" name="language[]" value="php" />
+
+					<label for="mysql">mySQL</label>
+					<input type="checkbox" id="mysql" name="language[]" value="mysql" />
+				</p>
+				<p><label for="comments">Comments</label></p>
+				<p>
+					<textarea id="comments" name="comments" rows="4" cols="40"
+						placeholder="Write description of your problem here..."></textarea>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Preffered Date and Time</legend>
+				<p>
+					<label for="date">Date</label>
+					<input type="text" name="date" id="date" placeholder="dd/mm/yyyy"
+							pattern="\d{2}/\d{2}/\d{4}">
+				</p>
+				<p>
+					<label for="time">Time</label>
+					<input type="text" name="time" id="time" placeholder="hh:mm" pattern="\d{2}:\d{2}">
+				</p>
+			</fieldset>
+			<input type="submit" value="Register" />
+			<input type="reset" value="Reset Form" />
+		</form>
+	</body>
+</html>
