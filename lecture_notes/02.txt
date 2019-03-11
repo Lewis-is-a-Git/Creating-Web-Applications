@@ -1,0 +1,31 @@
+Assignment part 1 is released
+  Due week 5
+  
+image
+  <img src="smiley.png" alt="smiley face" />
+  need teh last slash to make it SML complient
+  src is the location and file name
+  alt is the description
+  height and width attributes are also used
+    use the correct values, dont resize using these
+  inline element
+
+Figure
+  <figure>
+  <img
+    src="" alt="" />
+  <figcaption>
+    figure caption
+  </figcaption>
+  </figure>
+  
+Anchor
+  Hyperlink
+  <a href="webaddress.com">Link Lable</a>
+  can also use file names .html
+  
+Resource Locations
+  absolute path = "https://www.swinburne.com.au"
+  relative path = "index.html"
+    relative to the file currenty editing
+  
