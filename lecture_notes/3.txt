@@ -1,0 +1,79 @@
+search for 7 problems in the form
+  check boxes need to be an array
+  radio buttions need same name
+  form method and action
+  select must have a name to send it to a server
+  must have a submit button
+    type submit and value submit
+  dont use div when there is semantic markup (footer)
+  
+Lecture 3 Presentation and CSS
+seporate html file and css file
+
+<link href= "filename.css" rel="stylesheet" />
+
+h1 {
+  color: blue;
+  background-color: yellow;
+  }
+  
+p {
+  color: blue;
+  }
+  
+give and element an id to select just that element.
+<p id="paragraph5"> text </p>
+
+#paragraph5 {
+  color: orange;
+  }
+  
+group of elements in the same style
+give them a class
+<p class="green'>text</p>
+
+everything in class green
+.green {
+  color: green;
+  }
+  
+/* grouping selector */
+h1, p {
+  color: blue;
+  }
+
+only paragraphs in a section
+section p {color: blue;}
+
+selector {property: value;} 
+
+ordered list inside unordered list
+ul ol {
+  color: grey;
+  }
+  
+sudo class
+a:hover {
+  background-color: yellow;
+  }
+
+visited link, active, hover, focus
+
+sudo element
+first-line
+first-letter
+
+css property groups
+  heaps, check the slide
+
+size measurement
+  avoid absolute measurements
+  em
+    current font size
+    2em is double the current font size
+  percentage (%)
+    100% is current font size
+  
+font-family
+
+fonts can be downloaded using @font
