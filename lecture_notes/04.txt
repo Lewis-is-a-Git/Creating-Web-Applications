@@ -34,4 +34,5 @@ Box sizing
   content-box: width from content to the width
   
 Positining and layout
-  
+  clear
+    moves the element to a position that is clear in that side
