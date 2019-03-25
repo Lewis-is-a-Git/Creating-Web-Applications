@@ -1,0 +1,37 @@
+Css selectors
+
+Group selector 
+div, p {}
+
+Contextual
+div p {}
+
+Css layout
+display: inline
+  makes the elements in a row
+dislplay: inline-block
+  better, keeps them in blocks
+  expected blocks in a row
+background size
+  contain
+    always keeps the image contained in the element
+    
+border style
+  thin, medium, thick
+  TOP RIGHT BOTTOM LEFT
+  1 value
+    all sides
+  2 values
+    top-bottom, left-right
+  4 values
+    clockwise
+
+Margin is minimum seporation between elements
+  overlapping margins will use the largest
+
+Box sizing
+  border box: width from border to border
+  content-box: width from content to the width
+  
+Positining and layout
+  
