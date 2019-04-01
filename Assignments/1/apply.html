@@ -1,153 +1,161 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Application Form</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-        <script src="main.js"></script>
-    </head>
-    <body>
-        <header>
-            <h1>Job Company</h1>
-            <p>
-                Company where people work.
-            </p>
-            <img src="logo.png" alt="Logo" />
-        </header>
-        <nav>
-            <a href="jobs.html">Jobs</a>
-            <a href="enhancements.html">Enhancements</a>
-            <a href="about.html">About us</a>
-            <a href="mailto:101533222@student.swin.edu.au">Contact me</a>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="job, web" />
+    <meta name="author" content="Lewis 101533222" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Application Form</title>
+</head>
+
+<body>
+    <!-- Container (navigation menu + logo)-->
+    <header id="header">
+        <nav class="navbar-fixed-top">
+            <a href="index.html">
+                <img class="navbar-logo" src="styles/images/Logo.png" title="Home Page" alt="iT Jobs Logo" />
+            </a>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="jobs.html">Vacancies</a></li>
+                <li><a class="active" href="apply.html">Apply Here</a></li>
+                <li><a href="enhancements.html">Enhancements</a></li>
+                <li><a href="mailto:101533222@student.swin.edu.au" target="blank"> Contact Us</a></li>
+            </ul>
         </nav>
-        <form action="post"
-            action="http://mercury.swin.edu.au/it000000/formtest.php">
-            <fieldset>
-                <legend>Applciation Form</legend>
-                <p>
-                    <label for="jobid">Job Reference ID:</label>
-                    <input type="text" name="jobid" id="jobid"
-                        maxlength="5" size="5"
-                        pattern="[a-zA-Z0-9]{5}" required="required" />
-                </p>
-                <fieldset>
-                    <legend>Applicant details</legend>
+    </header>
+
+    <main>
+
+        <section class="container-fluid">
+            <h1>Application Form</h1>
+            <form class="container" method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+                    
                     <p>
-                        <label for="given_name">Given Name:</label>
-                        <input type="text" name="given_name" id="given_name"
-                            maxlength="20" size="20"
-                            pattern="[a-zA-Z]{1,15}" required="required" />
-                    </p>
-                    <p>
-                        <label for="family_name">Family Name:</label>
-                        <input type="text" name="family_name" id="family_name"
-                            maxlength="20" size="20"
-                            pattern="[a-zA-Z]{1,15}" required="required" />
-                    </p>
-                    <p>
-                        <label for="dob">Date of Brith</label>
-                        <input type="text" name="dob" id="dob"
-                            placeholder="dd/mm/yyyy"
-                            pattern="\d{2}/\d{2}/\d{4}">
-                    </p>
-                    <fieldset>
-                        <legend>Gender</legend>
-                        <p>
-                            <input type="radio" id="male" name="gender"
-                                value="male" required="required">
-                            <label for="male">Male</label>
-                            <input type="radio" id="female" name="gender"
-                                value="female">
-                            <label for="other">Other</label>
-                            <input type="radio" id="other" name="gender"
-                                value="other">
-                            <label for="other">Other</label>
-                        </p>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Address</legend>
-                        <p>
-                            <label for="street_address">Street Address</label>
-                            <input type="text" name="street_address"
-                                id="street_address"
-                                maxlength="40" size="40"
-                                pattern="[a-zA-Z]{1,40}" required="required" />
-                        </p>
-                        <p>
-                            <label for="suburb">Suburb</label>
-                            <input type="text" name="suburb" id="suburb"
-                                maxlength="40" size="40"
-                                pattern="[a-zA-Z]{1,40}" required="required" />
-                        </p>
-                        <p>
-                            <label for="state">State</label>
-                            <select name="state" id="state" required="required">
-                                <option hidden value="">Select state...</option>
-                                <option value="vic">VIC</option>
-                                <option value="nsw">NSW</option>
-                                <option value="qld">QLD</option>
-                                <option value="nt">NT</option>
-                                <option value="wa">WA</option>
-                                <option value="sa">SA</option>
-                                <option value="tas">TAS</option>
-                                <option value="act">ACT</option>
-                            </select>
-                        </p>
-                        <p>
-                            <label for="post_code">Post Code</label>
-                            <input type="text" name="post_code" id="post_code"
-                                maxlength="4" size="4"
-                                pattern="\d{4}" required="required" />
-                        </p>
-                    </fieldset>
-                    <p>
-                        <label for="email">Email Address</label>
-                        <input type="text" name="email" id="email"
-                            maxlength="40" size="40"
-                            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z\.]{2,}$"
+                        <label for="jobid">Job Reference ID:</label>
+                        <input type="text" name="jobid" id="jobid" maxlength="5" size="5" pattern="[a-zA-Z0-9]{5}"
                             required="required" />
                     </p>
-                    <p>
-                        <label for="phone">Phone Number</label>
-                        <input type="text" name="phone" id="phone"
-                            maxlength="20" size="20"
-                            pattern="[\d\s]{8,12}" required="required" />
-                    </p>
-                    <p>
-                        <input type="checkbox" id="coms" name="skills[]"
-                            value="coms" checked="checked" />
-                        <label for="coms">Communication</label>
+                    <fieldset>
+                        <legend>Applicant details</legend>
+                        <p>
+                            <label for="given_name">Given Name:</label>
+                            <input type="text" name="given_name" id="given_name" maxlength="20" size="20"
+                                pattern="[a-zA-Z]{1,15}" required="required" />
+                        </p>
+                        <p>
+                            <label for="family_name">Family Name:</label>
+                            <input type="text" name="family_name" id="family_name" maxlength="20" size="20"
+                                pattern="[a-zA-Z]{1,15}" required="required" />
+                        </p>
+                        <p>
+                            <label for="dob">Date of Brith</label>
+                            <input type="text" name="dob" id="dob" placeholder="dd/mm/yyyy"
+                                pattern="\d{2}/\d{2}/\d{4}" required="required" />
+                        </p>
+                        <fieldset>
+                            <legend>Gender</legend>
+                            <p>
+                                <input type="radio" id="male" name="gender" value="male" required="required" />
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="female" />
+                                <label for="female">Female</label>
+                                <input type="radio" id="other" name="gender" value="other" />
+                                <label for="other">Other</label>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Address</legend>
+                            <p>
+                                <label for="street_address">Street Address</label>
+                                <input type="text" name="street_address" id="street_address" maxlength="40" size="40"
+                                    pattern="[a-zA-Z]{1,40}" required="required" />
+                            </p>
+                            <p>
+                                <label for="suburb">Suburb</label>
+                                <input type="text" name="suburb" id="suburb" maxlength="40" size="40"
+                                    pattern="[a-zA-Z]{1,40}" required="required" />
+                            </p>
+                            <p>
+                                <label for="state">State</label>
+                                <select name="state" id="state" required="required">
+                                    <option hidden="hidden" value="">Select state...</option>
+                                    <option value="vic">VIC</option>
+                                    <option value="nsw">NSW</option>
+                                    <option value="qld">QLD</option>
+                                    <option value="nt">NT</option>
+                                    <option value="wa">WA</option>
+                                    <option value="sa">SA</option>
+                                    <option value="tas">TAS</option>
+                                    <option value="act">ACT</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="post_code">Post Code</label>
+                                <input type="text" name="post_code" id="post_code" maxlength="4" size="4"
+                                    pattern="\d{4}" required="required" />
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Contact Details</legend>
+                            <p>
+                                <label for="email">Email Address</label>
+                                <input type="text" name="email" id="email" maxlength="40" size="40"
+                                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z\.]{2,}$" required="required" />
+                            </p>
+                            <p>
+                                <label for="phone">Phone Number</label>
+                                <input type="text" name="phone" id="phone" maxlength="20" size="20"
+                                    pattern="[\d\s]{8,12}" required="required" />
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Skills</legend>
+                            <p>
+                                <input type="checkbox" id="coms" name="skills[]" value="coms" checked="checked" />
+                                <label for="coms">Communication</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="teamwork" name="skills[]" value="teamwork" />
+                                <label for="teamwork">Teamwork</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="problem" name="skills[]" value="problem" />
+                                <label for="problem">Problem solving</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="skill" name="skills[]" value="other" />
+                                <label for="other">Other Skills...</label>
+                            </p>
+                            <p>
+                                <label id="other_text_label" for="other_text">Other Skills</label>
+                            </p>
+                            <p>
+                                <textarea id="other_text" name="other_text" rows="4" cols="40"
+                                    placeholder="Enter other skills here..."></textarea>
+                            </p>
+                        </fieldset>
+                    </fieldset>
+                <input class="button" type="submit" value="Apply" />
+                <input class="button" type="reset" value="Reset Form" />
+            </form>
 
-                    </p>
-                    <p>
-                        <input type="checkbox" id="teamwork" name="skills[]"
-                            value="teamwork" />
-                        <label for="teamwork">Teamwork</label>
+        </section>
+        <!--footer + copyright section-->
+        <footer>
+            <a href="#header" title="To Top">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+            <p>Copyright &#169; 2019 Index iT - All Rights Reserved. | By Lewis Brockman Horsley
+                <br /> Language: English (Australia)</p>
+        </footer>
+    </main>
+</body>
 
-                    </p>
-                    <p>
-                        <input type="checkbox" id="problem" name="skills[]"
-                            value="problem" />
-                        <label for="problem">Problem solving</label>
-
-                    </p>
-                    <p>
-                        <input type="checkbox" id="other" name="skills[]"
-                            value="other" />
-                        <label for="other">Other Skills...</label>
-                    </p>
-                    <p>
-                        <label for="other_text">Other Skills</label>
-                        <textarea id="other_text" name="other_text" rows="4"
-                            cols="40"
-                            placeholder="Enter other skills here..."></textarea>
-                    </p>
-                </fieldset>
-            </fieldset>
-            <input type="submit" value="Apply" />
-            <input type="reset" value="Reset Form" />
-        </form>
-    </body>
 </html>
