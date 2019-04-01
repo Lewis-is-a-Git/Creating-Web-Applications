@@ -1,1 +1,101 @@
+Border style
+
+p {
+  border-top: 5px dotted yellow;
+  border-right: 10px solid lightblue;
+  border-bottom: ;
+  border-left: ;
+}
+
+or
+
+p {
+  border-style: dotted solid solid dotted;
+  border-color: yellwo lightblue darkblue orange;
+  border-width: ;
+}
+
+or
+p {
+  border-top-style: ;
+}
+
+Javascript
+
+Browser
+  parses HTML and css
+  displays content
+  interprets javascript
+  
+Document object model
+  tree structure of html
+  
+CSSOM object model
+
+Javascrip can manipulate the DOM/CSSOM content and style
+  browser will recreate render tree
+  
+Programming object
+  events (things happen to it) ball.isDropped
+  properties (attributes of object) ball.colour;
+  methods (things it can do) ball.bounce()
+  
+DOM ELements
+  document.documentElement
+  document.documentElement.childNodes[1]
+  works with any xml document.
+  
+Some useful methods
+  getElementById()
+  getElementsByTagName() returns array
+  
+Events
+  mouse events
+  keyboard events
+  form events
+  animation, print, media
+  
+Event Listener
+  myDOMobject.onclick = doSomething;
+  or
+  myDOMobject.addEventListener('onclick', ... );
+  
+HTML script
+  <script src="file.js"></script>
+  give elemets an id to find it in javascript
+  dont inline or embed,
+  use link to external script file with relative path
+  
+Javascript template
+
+  function getInputInfo() {
+  
+  }
+  
+  function inint () {
+    clickme.onclick = getinputinfo;
+  }
+  
+  window.onload = init; //wait for the page to finish loading before we start the scripts
+  
+  variables
+    var only avaliable in the function
+    let only avaliable the block it was called in
+    
+files block comment sat top
+/*
+  purpose: 
+  author: 
+*/
+use strict; //all varaibles must be declared with a var
+function inint() {
+  var fname = prompt("PLease enter your name", "default value");
+  alert("Hello " + fname);
+}
+window.onload = init;
+
+always declare and initialise a varible on the same line
+
+CONSTATN_VARIABLE = 4; //use uppercase for constants
+camelCase for varaibles
 
