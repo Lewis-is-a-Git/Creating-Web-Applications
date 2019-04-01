@@ -1,0 +1,25 @@
+/*
+    filename: lewis
+    author: lewis
+    created: 15/3/19
+    last modified: 15/3/19
+    description: L3_HTML5_form
+*/
+* {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #2F4F4F}
+h1 {color: #800080; font-size: 2em; font-weight: bold}
+h2 {color:  #008080}
+aside, footer {font-style: italic}
+h1, h2, h3 {font-family: Arial, Helvetica, sans-serif}
+table, th, td {border: 1px solid #000000}
+#images {text-align: center}
+#h3heading {color: #ff0000}
+.special {color: #ff8c00; font-weight: bold}
+.tableheaders {text-align: right}
+nav a {text-decoration: none;
+    padding: 0.2em 0.6em;
+    border: 4px solid #ccc}
+ol {list-style-type: lower-roman;}
+ul {list-style-type: square;}
+ol > ul {list-style-type: square}
+aside:hover {display: none; visibility: hidden;}
+nav > a:hover {background-color: #add8e6; border-color: #00008b}
