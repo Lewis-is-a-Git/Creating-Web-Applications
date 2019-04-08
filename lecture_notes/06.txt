@@ -1,0 +1,82 @@
+Javascript change color of buttons
+------------------------------------------------------
+"use strict"; //requires var to declare varialbes
+
+function redClicked() {
+  var red = document.getElementById("red"):
+  red.style.backgroundColor = "red";
+  var green = document.getElementById("green"):
+  green.style.backgroundColor = "white";
+}
+
+function greenClicked() {
+  var green = document.getElementById("green"):
+  green.style.backgroundColor = "green";
+  var red = document.getElementById("red"):
+  red.style.backgroundColor = "white";
+}
+
+// link event and event handler
+function init() {
+  //get element
+  var red = document.getelementbyId("red"):
+  //link event and event handler
+  red.onclick = redClicked;
+  
+  var green = document.getelementbyId("green"):
+  //link event and event handler
+  green.onclick = greenClicked;
+}
+
+window.onload = init;
+-----------------------------------------------------
+
+string primative object has a property for length
+  there are heaps of usefull methods for string objects
+  string.replace(/text/i,"replaced text");
+  /i is case insensitive
+  
+array object methods
+  pop(); //removes last element of array
+  push("element"); // adds element to end of array
+  shift(); //removes first element
+  unshift("element"); // adds element to start of array
+  join();
+  reverse();
+  split("/"); // split string based on seporator returns array
+  
+New date (Year, month, day, hour, minute, second, milisecond)
+  month starts from 0 apr = 3
+  dates have getters
+  
+form validation
+  var firstname = document.getElementById("firstname").value;
+  
+  do checks and append error message
+    field empty append error message
+    isNaN append to error message
+  if the error messag is not emplty then alert the error message
+  trim() removes blank space from both ends
+  
+  get form by Id
+  link onsubmit event to event handler validate
+  formId.onsubmit = validate;
+  
+  regular expressions
+   var regularExpressionObject = /^....$/
+   $ is required to match whole string
+   string .match("regularExpressionObject);
+   lastnameExpression = /^[a-zA-Z'{2, 20}$/
+   ^ is start of string //must start with letter
+    without this 
+
+Assignment
+Use a massive if statemment in the init function
+  to determine which page to load
+  and which function to inint.
+
+
+case statements need a break
+  or they keep going
+  
+   
