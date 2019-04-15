@@ -1,0 +1,24 @@
+javascript part 3
+Document Object Model DOM
+  location, history and document heirachy of objects
+  
+window object is top of heirachy
+  dont need it all the time
+  methods
+    alert(text)
+    prompt(text,def)
+  events
+    onload
+
+get all the elemnts in a field set:
+  get element by id(fieldset).ger elements by tagname(input)
+  
+Validate input on blur
+for each i in elements by tage name()
+  input element[i].onblur = validateinputonblur;
+  
+web storage
+  can store information
+  can only be accessed by the same protocol and domain and port number
+  
+  
