@@ -1,0 +1,49 @@
+javascript errors
+  event links dont have brackets
+
+php is used to make templates of the html data
+  just include the php script to getHeader();
+
+php is server side scripting, processes the script and sends it to the client
+  embedded scripting language
+  supports many databases (mySQL)
+  scripts in html files must be .php filetype
+  
+echo
+  needs double quotation marks
+  listing multiple string, or concatenation
+  
+constants
+  define("PI", 3.14);
+  no dollar sign
+  can only be defined as global
+  
+array
+  $days = array("mon", "tues");
+  or
+  $days = ["mon", "tues"];
+  
+  
+global variables work differently
+  need to declare 
+  global $x, $y
+  to use in a function
+
+loop
+  foreach (array as element){
+  }
+
+  example
+    echo "<ul>" ;
+    foreach ($daysOfWeek as $day) {
+      echo "<li>$day</li>";
+    }
+    echo "</ul>";
+    
+    
+Differences between Javascript
+  $ for var
+  global to access global variables
+  constant doesnt need $, not declared inside function
+  double quotations process varaibles
+  
