@@ -1,0 +1,61 @@
+php bug solving
+  fiunctions need keywords
+  contants dont need $ symbol
+  global variables need global keyword
+  
+  
+Superglobal
+  get or post
+  $_GET or $_POST all uppercase
+  auto populated associative array (key value pairs)
+  
+  
+regular expresstion match
+  preg_match("//", $string)
+  
+common regular epxressions are provided by php
+  filter_var($email, FILTER_VALIDATE_EMAIL)
+  this filter is pre defined
+  
+php includes
+  <?php
+    include_once("php_menu.php"); //rest of content will load
+  ?>
+  require("php_menu.inc");
+    critical error on failure
+      wont be able to see anyhtign else
+use include for non essential html elements (nav bar)
+use require for database connection parameters
+
+.inc extenstion is used for php include files
+  
+active page on header
+  in php incliude tag
+  add new variable $page = title
+  insert php into the anchor tag <?php echo ($page =="jobspage")?"class='active'":""; ?>
+  set that link to active class on each link
+  
+  
+Managing state
+  remeber user details and provide reccomendations
+  passing variables to other pages
+    a href page.php?variable=$variable
+  pass data from page to page to page (not so convenient)
+  
+  session is used to pass data betweeen many pages
+  text file saved server side
+  cookies
+  superglobal $_SESSION
+  
+  
+  delete session (log out)
+  session_start(); //finds session
+  $_SESSION = array(); //clears variable
+  session_destroy(); //removes the txt file from the server
+  
+  if isset _get
+  
+  if isset _session
+  
+  
+  
