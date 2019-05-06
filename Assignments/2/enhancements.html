@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="job, web" />
+    <meta name="author" content="Lewis 101533222" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="styles/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/enhancements.js"></script>
+    <title>Enhancements</title>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <!-- Container (navigation menu + logo)-->
+            <header id="header">
+                <nav class="navbar-fixed-top">
+                    <a href="index.html">
+                        <img class="navbar-logo" src="styles/images/Logo.png" title="Home Page" alt="iT Jobs Logo" />
+                    </a>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="jobs.html">Vacancies</a></li>
+                        <li><a href="apply.html">Apply Here</a></li>
+                        <li><a class="active" href="enhancements.html">Enhancements</a></li>
+                        <li><a href="mailto:101533222@student.swin.edu.au" target="blank"> Contact Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="container-fluid">
+                <button id="back_to_top">Back To Top</button>
+                <article class="col-sm-8">
+                    <h1>CSS and HTML Enhancements</h1>
+                    <br />
+                    <h2 id="enhancement_1">Bootstrap Layout and Glyphicon</h2>
+                    <p>
+                        Bootstrap layout is used in this website. It is a quick and easy way to
+                        position content on the page. The layout is based on containers with rows and
+                        columns. There are 12 columns in a row, this makes the page easy to divide.
+                        <br />
+                        To make this work each page is required to link a stylesheet from bootstrap
+                        in the header. Each element that you would like to apply this layout to must
+                        have one or more bootstrap classes. The glyphicons are also applied the same
+                        way, using a span with classes.
+                        <br />
+                        <cite>
+                            Reference: https://getbootstrap.com/ Accessed: 28 Mar 2019.
+                        </cite>
+                        <br />
+                        This enhancement is used on all pages of this website, A good example is the
+                        jumbotron, which can be found <a href="index.html">here</a>.
+
+                    </p>
+                    <h2 id="enhancement_2">Email Form</h2>
+                    <p>
+                        Using a form to compose an email before the user is required to send it.
+                        <br />
+                        This is an enhancement over a simple email me button. The submit button of
+                        the form will action a mailto link. To make this work, the mailto button is
+                        replaced with a submit button in a form with action=mailto. The link opens the
+                        users default handler for mailto links, the email subject and body are already
+                        filled in.
+                    </p>
+                    <h2 id="enhancement_3">Navigation Bar</h2>
+                    <br />
+                    <p>
+                        The navigation bar shows the current page the user is viewing.
+                        <br />
+                        This works by using an active class attribute applied to the current page link.
+                        The navigation bar html is unique for each page. To make this work it need a class
+                        applied to the anchor tag on the nav bar. CSS is also used to style the button.
+                    </p>
+                    <form action="enhancements2.html">
+                        <button>View JavaScript Enhancements</button>
+                    </form>
+                </article>
+
+
+                <aside class="col-sm-4">
+                    <h2>List of enhancements</h2>
+                    <hr />
+                    <ul>
+                        <li><a href="#enhancement_1">Bootstrap Layout and Glyphicon</a></li>
+                        <li><a href="#enhancement_2">Email Form</a></li>
+                        <li><a href="#enhancement_3">Navigation Bar</a></li>
+                    </ul>
+                </aside>
+            </main>
+        </div>
+
+        <!--footer + copyright section-->
+        <footer>
+            <a href="#header" title="To Top">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+            <p>Copyright &#169; 2019 Index iT - All Rights Reserved. | By Lewis Brockman Horsley
+                <br /> Language: English (Australia)</p>
+        </footer>
+    </div>
+</body>
+
+
+</html>
