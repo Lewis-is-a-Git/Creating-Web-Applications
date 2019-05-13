@@ -1,0 +1,49 @@
+databases
+primary key 
+  auto incremented
+   used as iD
+   
+Types of relationships in databse
+  one to one
+  one to many
+  many to one
+  many to many
+  
+foreign key
+  a foreign tables primary key
+  
+mysql -- MariaDB (fork of mysql)
+  structed query language
+  phpmyadmin
+    gui for database
+    feenix-mariadb-web.swin.edu.au
+    mysql functions are depreiated
+    msql(improved) is used in this class
+    
+@sign will hide error messages for mysqli functions    
+
+
+common sql commands
+create table
+drop
+insert
+update
+select
+delete
+
+ASSIGNMENT INFO
+CREATE TABLE IF NOT EXISTS
+  needed
+  get commants from myadmin to save typing
+
+dont need semicolon
+
+for date data curdate() //current date
+
+mysqli_fetch_assoc()
+  get the first record
+  pointer automatically updates
+  associative array
+  
+  
+$conn conntect(params, or die("<><>"))
