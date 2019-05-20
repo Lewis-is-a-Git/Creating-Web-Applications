@@ -1,0 +1,32 @@
+Security Issues
+  mysqli_prepare($conn, $query) // perform query optimisation
+  mysqli_ binded string ($prepared string, "is",$id,$lname) i means integer and s means string
+  prevents sql injection, use prepared statement
+  
+  
+Cloud Computing
+  computer resources over the internet
+  on demand
+  pay as you go
+  good for small business
+  3 types
+    INFRASTRUCUTE (setup own development environment and run on external servers)
+    PLATFORM (php developemtn)
+    SOFTWARE (Office 365)
+    
+IoT
+  
+  
+  
+socrative quizzes on canvas
+
+
+EXAM
+  20 multiple choice questions
+  all questions only have 1 correct answer
+  REvision
+    sample short answers
+  short answer
+  short code
+  find errors
+  
