@@ -1,0 +1,212 @@
+revision module in canvas
+  identify errors
+    can be css, html, javascript  any language
+    php mysql commands
+    
+Exam Review
+  internet techniolgoes
+  web technologies
+  5 languages
+  worth 40%
+  
+  Multiple choice 20 Marks ~ 20 questions
+  Short Answer
+    HTML - 20 Marks
+    CSS - 20 Marks
+    javascript - 25 marks
+    PHP and mysql - 15 marks
+    
+    
+    types of questions
+      write code
+      explain code
+        event, statement, html element
+      find errors
+      write functions
+      
+    General questions about internet and web technolgies ( all in multiple choice )
+    
+HTML
+  comments (also for other languages)
+  html structure
+    head
+    body
+    <image scr="link.jpeg" alt="decription" />
+    <a href=""
+      understant abosulte path and relative path
+      mailto links
+      
+  meta tags
+    description
+    content
+    keywords
+    author
+    <meta name="keywords" content="CWA HTML" />
+    <meta name="description" content="description content" />
+
+  lists, forms
+  inline vs block
+    inline: strong em span img a
+    block: div ol ul h1 table p
+    
+    forms
+      method action
+      <input type="submit" value="register" />
+      inout type = "checkbox" : 
+      1, name="skills[]"
+      2, all have different names
+      
+      radio buttons
+        input type="radio"
+          must be same name
+      text input
+        <input type="text" id="firstname" name="fName" />
+        
+    Table
+      table tr td th tbody thead tfooter
+      
+    <label for="studentname"> Student NAme</label>
+    <input type="text" id="stufdentname" name="sName" />
+      
+    structural elements
+      header footer nav section
+      
+    regular epressions
+      
+    special characters
+      registration mark, named code is "reg" numbered code is 174
+      <p>&reg; Swinburne University. &#174; </p>
+      
+      
+CSS
+  Link to css
+  <link href="styles/style.css" rel="stylesheet" />
+  Selector
+  id, class, grouping, contextual, pseudo(:hover)
+    p.class select all paragraps of class="class"
+    a:hover mouse over on link
+    section p { p in section
+    article, p { p and articles
+  Properties
+    width: 100px, 20%
+    font-size: em, px
+    color:
+    font-family: first, second, sans-serif;
+    float clear
+    text-align: 
+    list-style: none (hide the bullet)
+    text-decoration: none (remove underline)
+  Border, Margin, Padding
+    margin: 2px 4px 6px 8px; TRBL TRouBLe
+    padding: 2px 10px; TB RL
+  Position
+    static relative absolute fixed
+      default: static
+      relative to view port: fixed
+      
+Javascript
+  Basic
+   Link to JS
+    <script src="" ></script>
+    scripts/q2.js
+    ../scripts to go up one folder then go into scripts folder
+    
+  comments
+    // or /* */
+  naming rules 
+    var x = 100;
+    var demo1 = document.getElementById("demo");
+      explain what is demo and what is demo1
+    use strict;
+      must declare variables with var keyword
+  Array
+    decalare array
+      var arr = ["mon", "tues", "wed"];
+      or
+      var arr = new Array(100);
+      
+  Function
+    define function, return value, call function
+      link event and function: no () 
+      Call function, define function: use()
+        Likely to appear in find errors questions.
+      alert
+        charAt toUpperCase toLowerCase
+    init function
+      window.onload=init;
+      
+  Control Flow
+    if else
+    while
+    switch
+    for
+    
+ other javascript
+  get user input value: var fname=document.getElementById("fname").value;
+  write to html element: document.getElementById("demo".textContent="hello World!";
+    or innerHTML = "<p>Hello world!</p>";
+    
+  Regular expression
+    /  / enclosed by slash
+    match, test
+    firstname.match(reg);
+    reg.test(firstanme);
+    
+    test if checkbox is checked
+      checked = check lab 7
+      
+PHP and My sql
+  easier thatn othe rparts
+   only 5 functions
+    
+  variables
+    $, no spaces, can conatin _
+  isset $_POST, $_GET
+    if (isset($POST["jobref"]) {
+      $jobref = $_POST["jobref"];
+    }
+  die() exit() SAME  
+  PHP include
+   <?php include "header.inc";v?>
+  for loop
+    use for loop to output array elemets
+    for ($i=0; $i<count(arr);$i++;){}
+  database query
+    setup connection
+     $conn = msqli_connect($host,$user,$pass,$database);  REMEMBER ORDER
+   setup query
+     $query = "select * from employee where club='swimming'";
+   run query
+    $result = mysqli_query($conn, $query);
+   access results
+    $record = mysqli_fetch_assoc($result);
+   close connection
+    $mysqli_close($conn);
+    
+    hide system messages use @
+    
+    for study make a loop to display a table
+    
+Web and internet Technologies
+  HTTP: Hyper text transfer protocol
+    application layer
+  HTTP response: 200 (ok), 404 (not found)
+  Main task of IP
+    L7 page 10-11
+    packets delivery based on ip address
+  Main task of TCP
+    ensure order
+    minimise error
+    discard duplicate
+    resend lost packets
+  HTTPS
+    sncription of data between client and server
+    Port number ofr web pages/http protocol
+      80
+    HTTP is stateless
+      server doesnt retain client information
+    DNS
+      translate domain name to ip address
+    POST vs GET
+      L7 page 30
+      
